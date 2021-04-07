@@ -1,2 +1,3 @@
-# homeassistant-addons
-Snapdrop addon for Home Assistant
+
+## Demo
+![Demo of Snapdrop running in HomeAssistant](images/demo.gif "Demo")
