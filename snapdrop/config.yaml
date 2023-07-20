@@ -1,14 +1,11 @@
 ---
-# Snapdrop expects to find it's WebRTC connection at wss:<HOST>/server/WebRTC; that doesn't work with HA
-# The most straight forward fix would be to patch here in Snapdrop https://github.com/RobinLinus/snapdrop/blob/master/client/scripts/network.js#L61
-# ->         const url = protocol + '://' + location.host + location.pathname + '/server' + webrtc;
-# The alternative is to install Ngnix Proxy Manager Addon (which MariaDB Addon) and then configure a redirect
 name: Snapdrop
 version: '0.1-alpha'
 slug: snapdrop
 description: Snapdrop is a AirDrop-like progressive web app that transfers files between
   browsers (or in this case Home Assistant clients). Data is transfered between machines
   on the same IP subnet / LAN network using WebRTC with traffic being encrypted in transit.
+init: false
 arch:
   - armhf
   - armv7
